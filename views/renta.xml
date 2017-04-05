@@ -9,17 +9,12 @@
                 <form string="Calculadora Form">
                     <sheet>
                         <group>
-                            <field name="name"/>
+                            <field name="dni"/>
                             <field name="salaryB" />
-                            <field name="children"/>
-                            <field name="childrenUp" />
-                            <field name="childrenDown" />
-                            <field name="parent" />
                         </group>
-                    </sheet>
-                    <sheet>
+                        
                         <group>
-                            <button string="Calcula" name="calcSalaryAnual" />
+                            <button string="Calcula" name="calcSalaryAnual" type="object" class="oe_highlight" />
                         </group>
                     </sheet>
                 </form>
