@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		
+		<record model="ir.ui.view" id="calculadora_form_view">
+            <field name="name">calculadora.form</field>
+            <field name="model">renta.renta</field>
+            <field name="arch" type="xml">
+                <form string="Calculadora Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="salaryB" />
+                            <field name="children"/>
+                            <field name="childrenUp" />
+                            <field name="childrenDown" />
+                            <field name="parent" />
+                        </group>
+                    </sheet>
+                    <sheet>
+                        <group>
+                            <button string="Calcula" name="calcSalaryAnual" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+
+		<!-- window action -->
+        <record model="ir.actions.act_window" id="renta_list_action">
+            <field name="name">Calculadora</field>
+            <field name="res_model">renta.renta</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Fes click per calcular una nova renta</p>
+            </field>
+        </record>
+
+
+        <menuitem id="main_renta_menu" name="Calcul Renta"/>
+        
+        <menuitem id="renta_menu" name="Calcul de la renta" parent="main_renta_menu"/>
+        
+        <menuitem id="calcul_menu" name="Calculadora" parent="renta_menu" action="renta_list_action"/>
+
+		
+	</data>
+</openerp>
