@@ -10,28 +10,18 @@
                     <sheet>
                         <group>
 							<field name="name" />
-							<field name="salaryB" />
-							<field name="valueIM" />
-							<field name="valueMB" />
-							
-							<field name="stateAlone" />
-							<field name="stateMarried" />
-							<field name="stateDead" />
+							<field name="salaryB" />							
 							
 							<field name="children" />
-							<field name="childrenOld" />
 							<field name="childrenDown" />
 							
-							<field name="parent" />
-							<field name="parentOld" />
-							
-							
+							<field name="parent" />							
 							
                         </group>
                         
                         <group>
 							<field name="result" />
-							<button string="Calcula" name="calcSalaryAnual" type="object" />
+							<button string="Calcula" name="calcRenta" type="object" />
                         </group>
                     </sheet>
                 </form>
